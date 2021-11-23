@@ -11,7 +11,7 @@ Aplikacja służąco do rozpoznawania ras psów. Po wgraniu zdjęcia aplikacja r
 ## Architektura + stos technologiczny
 
 - **Python** - język programowania odpowiedzialny za stworzenie aplikacji oraz obsługę pobranego modelu. Najważniejsze biblioteki to flask, tensorflow.
-- **Salesorce** - 
+- **Salesorce** - platforma oferująca dostęp do aplikacji końcowej, to w niej wgrywamy zdjęcie które jest zapisywane i przekazywane do modułu Pythona
 ## Opis funkcjonalności
 - rozpoznawanie rasy psa,
 - pozyskiwanie informacji na temat rozpoznanej rasy.
@@ -20,7 +20,7 @@ Aplikacja służąco do rozpoznawania ras psów. Po wgraniu zdjęcia aplikacja r
 - pobranie oraz otagowanie zdjęć,
 - wytrenowanie modelu,
 - pobranie modelu oraz stworzenie aplikacji wykorzystującej go,
-- SALESFORCE
+- przygotowanie aplikacji mobilnej na platformie salesforce korespondującej z modułem pythonowym
 
 ## Zastosowanie
 Wiele osób doświadczyło sytuacji w której zastanawia się jakiej rasy jest napotkany pies. Dobrym przykładem będzie wizyta w schronisku podczas której chcemy rozpoznać rasę naszego nowego domownika. Aplikacja znajdzie także zastosowanie gdy znajdziemy bezpańskiego psa na ulicy, wystarczy zrobić mu zdjęcie i nasza aplikacja ropozna rasę aby skonstruować bardziej szczegółowe ogłoszenie znalezienia pieska. Aplikacja dodatkowo zapewnia podstawowe informacje o rozpoznanej rasie.
