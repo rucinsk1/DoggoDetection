@@ -22,5 +22,11 @@ Aplikacja służąco do rozpoznawania ras psów. Po wgraniu zdjęcia aplikacja r
 - pobranie modelu oraz stworzenie aplikacji wykorzystującej go,
 - przygotowanie aplikacji mobilnej na platformie salesforce korespondującej z modułem pythonowym
 
+## Schemat działania
+- użytkownik uruchamia aplikacje Doggo Detector w Salesforce
+- użytkownik zamieszcza zdjęcie psa, którego rasę chce poznać
+- zdjęcie przesyłane jest do aplikacji python'owej w której analizuje je model
+- na podstawie przesłanej informacji o wykrytej rasie psa, aplikacja wyświetla informacje o danej rasie
+
 ## Zastosowanie
 Wiele osób doświadczyło sytuacji w której zastanawia się jakiej rasy jest napotkany pies. Dobrym przykładem będzie wizyta w schronisku podczas której chcemy rozpoznać rasę naszego nowego domownika. Aplikacja znajdzie także zastosowanie gdy znajdziemy bezpańskiego psa na ulicy, wystarczy zrobić mu zdjęcie i nasza aplikacja ropozna rasę aby skonstruować bardziej szczegółowe ogłoszenie znalezienia pieska. Aplikacja dodatkowo zapewnia podstawowe informacje o rozpoznanej rasie.
