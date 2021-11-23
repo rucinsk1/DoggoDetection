@@ -9,6 +9,7 @@ Aplikacja służąco do rozpoznawania ras psów. Po wgraniu zdjęcia aplikacja r
 
 
 ## Architektura + stos technologiczny
+![image](https://user-images.githubusercontent.com/46794180/142989730-90409bf2-c5ef-47d0-9e03-636df15a8788.png)
 
 - **Python** - język programowania odpowiedzialny za stworzenie aplikacji oraz obsługę pobranego modelu. Najważniejsze biblioteki to flask, tensorflow.
 - **Salesforce** - platforma oferująca dostęp do aplikacji końcowej, to w niej wgrywamy zdjęcie które jest zapisywane i przekazywane do modułu Pythona
