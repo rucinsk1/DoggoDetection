@@ -1,0 +1,24 @@
+<template>
+    <lightning-card if:false={doggoSearched}>
+        <div if:false={isSpinner} class="slds-text-align_center">
+            <h3 class='slds-text-title_bold'>Upload doggo picture:</h3>
+            <lightning-input name='doggoPhoto' type="file"
+                                   accept='.jpg' onchange= {handleUploadFinished}>
+            </lightning-input></br>
+            <lightning-button label='Woof!' onclick={handleSearchDoggo}></lightning-button>
+        </div>
+    </lightning-card>
+    <lightning-card if:true={isSpinner} class="slds-text-align_center">
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </lightning-card>
+    <lightning-card if:true={doggoSearched} title={name}>
+        <div class="slds-col slds-size_11-of-12">
+            <p>Dlugosc zycia: {life}</p>
+            <p>Pochodzenie: {whereFrom}</p>
+            <p>Usposobienie: {character}</p>
+            <p>Wysokosc w klebie: {size}</p>
+            <p>Umaszczenie: {color}</p>
+        </div>
+    </lightning-card>
+</template>
