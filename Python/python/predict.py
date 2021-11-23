@@ -47,14 +47,18 @@ def main(image_filename):
 
     image = Image.open(image_filename)
     predictions = od_model.predict_image(image)
-    print(predictions)
+    returned_predictions = []
     for pred in predictions:
-        print('Class: ', pred['tagName'], ' Probability: ', pred['probability'])
+        if pred['probsbility'] > 0.7:
+            returned_predictions.append(pred)
+
+    return returned_predictions
+    
     
 
 
-if __name__ == '__main__':
-    if len(sys.argv) <= 1:
-        print('USAGE: {} image_filename'.format(sys.argv[0]))
-    else:
-        main(sys.argv[1])
+# if __name__ == '__main__':
+#     if len(sys.argv) <= 1:
+#         print('USAGE: {} image_filename'.format(sys.argv[0]))
+#     else:
+#         main(sys.argv[1])
