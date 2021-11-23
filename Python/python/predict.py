@@ -49,7 +49,7 @@ def main(image_filename):
     predictions = od_model.predict_image(image)
     returned_predictions = []
     for pred in predictions:
-        if pred['probsbility'] > 0.7:
+        if pred['probability'] > 0.7:
             returned_predictions.append(pred)
 
     return returned_predictions
