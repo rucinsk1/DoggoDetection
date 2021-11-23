@@ -5,7 +5,7 @@ Aplikacja służąco do rozpoznawania ras psów. Po wgraniu zdjęcia aplikacja r
 - [Kalata Krzysztof](https://github.com/KrzysztofKalata)
 - [Ruciński Konrad](https://github.com/rucinsk1)
 
-## Link do prezentacji
+## [Link do prezentacji](https://www.youtube.com/watch?v=wW4fWsHx_8w)
 
 
 ## Architektura + stos technologiczny
